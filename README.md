@@ -3,7 +3,7 @@ Use regression to predict NYC AirBNB prices based on features available in the K
 on reviews, the minimum stay required, location, room type, and days available.
 
 ## Overview
-I started with plotting the data to look for which features that appeared to be correlated with price.
+I start with plotting the data to look for which features that appeared to be correlated with price.
 
 I cleaned the data and experimented with different techniques to handle outliers.  I removed records 
 where the rental price was more than 3 standard deviations outside the mean.  While the average rental
