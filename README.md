@@ -7,12 +7,12 @@ I start with plotting the data to look for which features that appeared to be co
 
 I cleaned the data and experimented with different techniques to handle outliers.  I removed records 
 where the rental price was more than 3 standard deviations outside the mean.  While the average rental
-price was $153/night, 5% of the data had prices exceeding $873.  Because there was so little data for 
-properties over $873 i discarded this data.  I also tried polynomial fitting but it did not improve the 
-model accuracy or reduce the error significantly.  I scaled the data between 0 and 1 and that helped with
-improving results.  I tried robust scaling to minimize the effect of outliers but that did not improve the 
-model.  Approximately 10.000 properties were missing data for reviews per month.  I set these
-to the mean value.  
+price was $153/night, some prices were as high as $10,000.  Because there was so little data for 
+properties that were 3 standard deviations above the mean, I discarded prices that exceeded $873.  I also tried 
+polynomial fitting but it did not improve the model accuracy or reduce the error significantly.  I scaled 
+the data between 0 and 1 and that helped with improving results.  I tried robust scaling to minimize
+the effect of outliers but that did not improve the model.  Approximately 10.000 properties were 
+missing data for reviews per month.  I set these to the mean value.  
 
 I also winsorized the minimum nights stay data.  This improved the accuracy and reduced the error of the model.  
 Winsorizing other data with outliers made the model less accurate.
